@@ -1,0 +1,2857 @@
+/* /* Larger monitors */
+ 
+    .container {
+        width: 1170px;
+    }
+
+    .topLeft.floatleft{width:550px;
+       
+    }
+   .topRight.floatright {width:500px;
+       
+    }
+ 
+
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    
+    /*Top Header Css*/
+.container {
+        width: 960px;
+    }
+
+.topHeader {
+    background: #242c42 none repeat scroll 0 0;
+    height: 50px;
+}
+
+.topLeft.floatleft {
+    width: 370px;
+}
+
+.email,
+.phone {
+    display: inline-block;
+}
+
+.email {
+    margin-right: 20px;
+}
+
+.email > a,
+.phone > a {
+    color: #fff;
+}
+
+.email .topIcon,
+.phone .topIcon {
+    color: #86bc42;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.topRight.floatright {
+    text-align: right;
+    width: 475px;
+}
+
+.socials,
+.signInGroup {
+    display: inline-block;
+}
+
+.socials {
+    margin-right: 20px;
+}
+
+.socials a,
+.signInGroup a {
+    color:red;
+   /*  -webkit-transition: all 0.4s ease; */
+    transition: all 0.4s ease;
+}
+
+.signInGroup {
+    margin-left: 70px;
+    text-transform: capitalize;
+}
+.line{padding:8px}
+
+
+/* 
+.signInGroup .login::after {
+    color: #fff;
+    content: "|";
+    margin-right: 10px;
+    padding-left: 10px;
+}
+ */
+.socials a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0 10px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.topHeaderContent {
+    padding-top: 12px;
+}
+
+.email span,
+.phone span {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.email span:hover,
+.phone span:hover,
+.socials a:hover,
+.socials a:hover,
+.signInGroup a:hover {
+    color: #86bc42;
+}
+
+
+/*Top Header Css End*/
+
+
+/* Header Css */
+
+.headerArea {
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.logo {
+    line-height: 90px;
+    width: 185px;
+}
+
+.mainMenuArea {
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.mainMenu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.mainMenu ul li a {
+    color: #242c42;
+    display: block;
+    line-height: 85px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    position: relative;
+    font-weight: 700;
+}
+
+.mainMenu ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #86bc42;
+    width: 0;
+    height: 5px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.mainMenu ul li a:hover:after {
+    width: 100%;
+}
+
+
+/*headerFixed css*/
+
+.headerFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #fff;
+    width: 100%;
+}
+
+.headerArea.headerFixed .logo {
+    line-height: 50px;
+}
+
+.headerArea.headerFixed .logo img {
+    width: 40%;
+}
+
+.headerArea.headerFixed .mainMenu ul li a {
+    line-height: 60px;
+}
+
+
+/*headerFixed css end*/
+
+
+/* Header Css End*/
+
+
+/*Slider Area Css*/
+
+#slider {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    margin-top: -102px;
+    left: 50%;
+    margin-left: -225px;
+    text-align: center;
+}
+
+.sliderArea {}
+
+.caption > h2 {
+    color:steelblue;
+    font-size: 55px;
+    line-height: 82.5px;
+}
+
+.caption > p {
+    color: #242c42;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.slideBtn {
+    border:none;
+    padding: 15px 80px;
+    text-transform: capitalize;
+    background: #86bc42;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+   
+}
+
+.slideBtn.hvr-sweep-to-right::before {content:"|";
+    background: #242c42 none repeat scroll 0 0;
+}
+
+
+/*Slider Area Css End */
+
+
+/*Course Area Css */
+
+.sectionTitle {
+    text-align: center;
+}
+
+.topTitle {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.centerTitle {
+    color: #49575f;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+.bottomTitle {
+    display: inline-block;
+    position: relative;
+}
+
+.bottomTitle .fa.fa-star {
+    color: #86bc42;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.bottomTitle::after {
+    background: #86bc42 none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    left: 32px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+}
+
+.bottomTitle::before {
+    background: #86bc42 none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    right: 32px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+}
+
+.singleCourse {
+    margin-bottom: 20px;
+    margin-bottom: 150px;                 /*  need to check*/
+    margin-left: 90px;
+    width: 375px;
+    float:left;
+    text-align: center;
+}
+
+.courseShowcase {
+    margin-left: -30px;
+    margin-top: 50px;
+}
+
+.courseShowcase {
+    margin-left: -30px;
+    margin-top: 50px;
+    padding: 80px 0;
+}
+
+.iconCircle {
+    border-radius: 50%;
+    height: 170px;
+    margin:0 auto;
+    position: relative;
+    width: 170px;
+}
+
+.iconBg {
+    background: #86bc42 ;
+    border-radius: 50%;
+    bottom: 12px;
+    color: #fff;
+   
+    height: 146px;
+ 
+    margin-left:12px;
+    position: absolute;
+  
+    transition: all 0.4s ease 0s;
+    width: 146px;
+    z-index:10;
+}
+
+.iconBg .fa.fa-star {
+    color:steelblue;
+ 
+    font-size: 70px;
+    line-height:px;
+    margin-top:30px;;
+   
+    transition: all 0.4s ease 0s;
+  
+}
+
+.iconInfo {
+    border-radius: 50%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+
+.infoBack {
+    background: #242c42 none repeat scroll 0 0;
+    border-radius: 50%;
+    display: table;
+    height: 100%;
+    opacity: 1;
+    position: relative;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+}
+
+.infoBack::before {
+    border: 12px solid #86bc42;
+    border-radius: 50%;
+    bottom: -1px;
+    content: "";
+    left: -1px;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    z-index: 20;
+}
+
+.infoBack > a {
+    color: #fff;
+    display: table-cell;
+    padding: 20px;
+    position: relative;
+    -webkit-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    vertical-align: middle;
+    z-index: 2;
+}
+
+.iconBg::before {
+    border: 3px solid;
+    border-radius: 50%;
+    bottom: -2px;
+    content: "";
+    left: -2px;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+}
+
+.iconCircle:hover .iconBg {
+    bottom: 90%;color:#86bc42;
+}
+
+.nameCourse {
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.nameCourse > a {
+    color: #49575f;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nameCourse {
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.nameCourse > a {
+    color: #49575f;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.nameCourse i {
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.nameCourse > a:hover,
+.nameCourse:hover i {
+    color: #86bc42;
+}
+
+.courseArea {
+    padding: 80px 0 0 !important;
+}
+
+
+/*Course Area Css End */
+
+
+/*progressBarArea Css*/
+
+.progressBarArea {
+    background:url(img/01.jpg) center center/cover no-repeat fixed;
+    color: gray;
+    padding: 45px 0 50px 0;
+}
+
+.progressTitle {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.singleProgressBarNumber {
+    float: left;
+    margin-left: 15px;
+    width: 175px;
+    position: relative;
+}
+
+.progressBarContent {
+    margin-left: 75px;
+    margin-bottom: 60px;
+}
+
+.singleProgressBarNumber .num {
+    font-size: 45px;
+    font-weight: 900;
+    line-height: 70px;
+    text-transform: capitalize;
+}
+
+.singleProgressBarNumber .name {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.singleProgressBarNumber::after {
+    background: #86bc42;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 50%;
+    margin-left: -15px;
+    position: absolute;
+    width: 25px;
+}
+
+.progressBarArea .learnNow {
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 20px 70px;
+    text-transform: uppercase;
+}
+
+.singleProgressBarNumber .num::before {
+    content: "+";
+    font-size: 40px;
+    position: absolute;
+    right: 5px;
+}
+
+.learnNow.hvr-sweep-to-right::before {
+    background: #86bc42 none repeat scroll 0 0;
+}
+/* .right:hover{background:red;move-to:right;font-size:20px;
+text-transform:capitalize;transition:.9s;padding:10px;z-index:100;
+ background: #242c42 none repeat scroll 0 0;color:white;}
+.right{background: red}
+ */
+/*progressBarArea Css end*/
+
+
+/*CourseOthersArea css*/
+
+.topCourses {
+    margin-left: -30px;
+}
+
+.singleTopCoursesItem {
+    float: left;
+    margin: 0 10px 50px 10px;
+    position: relative;
+    width: 460px;
+}
+
+.topCourses {
+    margin-left: 0;
+}
+
+.singleContent > a {
+    color: #49575f;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.singleContent {
+    box-sizing: border-box;
+    float: left;
+    padding-left: 15px;
+    text-align: left;
+    width: 55%;
+}
+
+.singleTopCoursesItem .autorItem,
+.singleTopCoursesItem .dateTimeItem,
+.viewItem,
+.commentItem {
+    color: #49575f;
+    display: inline-block;
+}
+
+.autorItem > a,
+.dateTimeItem > a {
+    color: #49575f;
+}
+
+.autorItem::after {
+    color: #bfc9ce;
+    content: "|";
+    margin: 0 5px;
+}
+
+.info {
+    margin-bottom: 10px;
+}
+
+.starRatingIcon {
+    color: #e2cf00;
+}
+
+.viewItem > p,
+.commentItem > p {
+    display: inline-block;
+}
+
+.viewItem {
+    margin-right: 10px;
+}
+
+.description > p {
+    color: #6f8190;
+    font-weight: 500;
+}
+
+.learnNowBtn {
+    background: #86bc42 none repeat scroll ;
+    border: medium none;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+
+.singleImage {
+    float: right;
+    width: 40%;
+}
+
+.singleTopCoursesItem::before {
+    border: 3px solid #eaedf5;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.singleTopCoursesItem::after {
+    background: #242c42 none repeat scroll 0 0;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 5px;
+}
+
+.singleTopCoursesItem:hover::after {
+    height: 100%;
+}
+
+.learnNowBtn.hvr-sweep-to-right::before {
+    background: #242c42 none repeat scroll 0 0;
+}
+
+
+/*CourseOthersArea css end*/
+
+
+/*scrollup plugin css*/
+
+.scrollUp {
+    border: 3px solid #86bc42;
+    bottom: 25px;
+    display: table;
+    height: 35px;
+    position: fixed;
+    right: 70px;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+    width: 35px;
+    z-index: 99999;
+}
+
+.scrollUp .fa.fa-angle-up {
+    color: black;
+    display: table-cell;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.scrollUp:hover {
+    background: #86bc42 none repeat scroll 0 0;
+}
+
+.scrollUp:hover .fa.fa-angle-up {
+    color: #fff;
+}
+
+
+/*scrollup plugin css end*/
+
+
+/*footer css*/
+
+.footerArea {
+    background: #242c42 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 30px;
+    line-height: 45px;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footerArea p {
+    color:steelblue;
+}
+
+
+/*footer css*/
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /*Top Header Css*/
+.container {
+        width: 750px;
+    }
+
+.topHeader {
+    background: #242c42 none repeat scroll 0 0;
+    height: 50px;
+}
+
+.topLeft.floatleft {
+    width: 300px;
+}
+
+.email,
+.phone {
+    display: inline-block;
+}
+
+.email {
+    margin-right: 15px;
+}
+
+.email > a,
+.phone > a {
+    color: #fff;
+}
+
+.email .topIcon,
+.phone .topIcon {
+    color: #86bc42;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.topRight.floatright {
+    text-align: right;
+    width: 450px;
+}
+
+.socials,
+.signInGroup {
+    display: inline-block;
+}
+
+.socials {
+    margin-right: 10px;
+}
+
+.socials a,
+.signInGroup a {
+    color:red;
+   /*  -webkit-transition: all 0.4s ease; */
+    transition: all 0.4s ease;
+}
+
+.signInGroup {
+    margin-left: 25px;
+    text-transform: capitalize;
+}
+.line{padding:8px}
+
+
+/* 
+.signInGroup .login::after {
+    color: #fff;
+    content: "|";
+    margin-right: 10px;
+    padding-left: 10px;
+}
+ */
+.socials a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 0 10px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.topHeaderContent {
+    padding-top: 20px;
+}
+
+.email span,
+.phone span {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-size: 12px;
+}
+
+.email span:hover,
+.phone span:hover,
+.socials a:hover,
+.socials a:hover,
+.signInGroup a:hover {
+    color: #86bc42;
+}
+
+
+/*Top Header Css End*/
+
+
+/* Header Css */
+
+.headerArea {
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.logo {
+    line-height: 50px;
+    width: 150px;
+}
+
+.mainMenuArea {
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.mainMenu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.mainMenu ul li a {
+    color: #242c42;
+    display: block;
+    line-height: 60px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    position: relative;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.mainMenu ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #86bc42;
+    width: 0;
+    height: 5px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.mainMenu ul li a:hover:after {
+    width: 100%;
+}
+
+
+/*headerFixed css*/
+
+.headerFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #fff;
+    padding: 0 0 0 0;
+    width: 100%;
+}
+
+.headerArea.headerFixed .logo {
+    line-height: 50px;
+}
+
+.headerArea.headerFixed .logo img {
+    width: 40%;
+}
+
+.headerArea.headerFixed .mainMenu ul li a {
+    line-height: 100px;
+}
+
+
+/*headerFixed css end*/
+
+
+/* Header Css End*/
+
+
+/*Slider Area Css*/
+
+#slider {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    margin-top: -102px;
+    left: 50%;
+    margin-left: -225px;
+    text-align: center;
+}
+
+.sliderArea {}
+
+.caption > h2 {
+    color:steelblue;
+    font-size: 55px;
+    line-height: 82.5px;
+}
+
+.caption > p {
+    color: #242c42;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.slideBtn {
+    border:none;
+    padding: 15px 80px;
+    text-transform: capitalize;
+    background: #86bc42;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+   
+}
+
+.slideBtn.hvr-sweep-to-right::before {content:"|";
+    background: #242c42 none repeat scroll 0 0;
+}
+
+
+/*Slider Area Css End */
+
+
+/*Course Area Css */
+
+.sectionTitle {
+    text-align: center;
+}
+
+.topTitle {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.centerTitle {
+    color: #49575f;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+.bottomTitle {
+    display: inline-block;
+    position: relative;
+}
+
+.bottomTitle .fa.fa-star {
+    color: #86bc42;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.bottomTitle::after {
+    background: #86bc42 none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    left: 32px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+}
+
+.bottomTitle::before {
+    background: #86bc42 none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    right: 32px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+}
+
+.singleCourse {
+    
+                     /*  need to check*/
+    width: 375px;
+    float:left;
+    text-align: center;
+    margin: 60px 0 0 0;
+    padding: 0000;
+}
+
+.courseShowcase {
+}
+
+.courseShowcase {
+    margin: 0000;
+    padding: 50px 0 0 0;
+}
+
+.iconCircle {
+    border-radius: 50%;
+    height: 170px;
+    margin:0 auto;
+    position: relative;
+    width: 170px;
+}
+
+.iconBg {
+    background: #86bc42 ;
+    border-radius: 50%;
+    bottom: 12px;
+    color: #fff;
+   
+    height: 146px;
+ 
+    margin-left:12px;
+    position: absolute;
+  
+    transition: all 0.4s ease 0s;
+    width: 146px;
+    z-index:10;
+}
+
+.iconBg .fa.fa-star {
+    color:steelblue;
+ 
+    font-size: 70px;
+    line-height:px;
+    margin-top:30px;;
+   
+    transition: all 0.4s ease 0s;
+  
+}
+
+.iconInfo {
+    border-radius: 50%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+
+.infoBack {
+    background: #242c42 none repeat scroll 0 0;
+    border-radius: 50%;
+    display: table;
+    height: 100%;
+    opacity: 1;
+    position: relative;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+}
+
+.infoBack::before {
+    border: 12px solid #86bc42;
+    border-radius: 50%;
+    bottom: -1px;
+    content: "";
+    left: -1px;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    z-index: 20;
+}
+
+.infoBack > a {
+    color: #fff;
+    display: table-cell;
+    padding: 20px;
+    position: relative;
+    -webkit-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    vertical-align: middle;
+    z-index: 2;
+}
+
+.iconBg::before {
+    border: 3px solid;
+    border-radius: 50%;
+    bottom: -2px;
+    content: "";
+    left: -2px;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+}
+
+.iconCircle:hover .iconBg {
+    bottom: 90%;color:#86bc42;
+}
+
+.nameCourse {
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.nameCourse > a {
+    color: #49575f;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nameCourse {
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.nameCourse > a {
+    color: #49575f;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.nameCourse i {
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.nameCourse > a:hover,
+.nameCourse:hover i {
+    color: #86bc42;
+}
+
+.courseArea {
+    padding: 80px 0  !important;
+}
+
+
+/*Course Area Css End */
+
+
+/*progressBarArea Css*/
+
+.progressBarArea {
+    background:url(img/01.jpg) center center/cover no-repeat fixed;
+    color:fray;
+    text-align: center;
+    padding: 45px 0;
+}
+
+.progressTitle {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.singleProgressBarNumber {
+    float: left;
+    margin-left: -15px;
+    width: 375px;
+    position: relative;
+}
+
+.progressBarContent {
+    margin-left: 0;
+    margin-bottom: 35px;
+}
+
+.singleProgressBarNumber .num {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 75px;
+    text-transform: capitalize;
+}
+
+.singleProgressBarNumber .name {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.singleProgressBarNumber::after {
+    background: #86bc42;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 50%;
+    margin-left: -15px;
+    position: absolute;
+    width: 30px;
+}
+
+.progressBarArea .learnNow {
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 20px 70px;
+    text-transform: uppercase;
+}
+
+.singleProgressBarNumber .num::before {
+    content: "+";
+    font-size: 40px;
+    position: absolute;
+    right: 90px;
+}
+
+.learnNow.hvr-sweep-to-right::before {
+    background: #86bc42 none repeat scroll 0 0;
+}
+/* .right:hover{background:red;move-to:right;font-size:20px;
+text-transform:capitalize;transition:.9s;padding:10px;z-index:100;
+ background: #242c42 none repeat scroll 0 0;color:white;}
+.right{background: red}
+ */
+/*progressBarArea Css end*/
+
+
+/*CourseOthersArea css*/
+
+.topCourses {
+    margin-left: -30px;
+}
+
+.singleTopCoursesItem {
+    float: left;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    position: relative;
+    width: 750px;
+}
+
+.topCourses {
+    margin-left: 0;
+}
+
+.singleContent > a {
+    color: #49575f;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.singleContent {
+    box-sizing: border-box;
+    float: left;
+    padding-left: 25px;
+    text-align: left;
+    width: 50%;
+}
+
+.singleTopCoursesItem .autorItem,
+.singleTopCoursesItem .dateTimeItem,
+.viewItem,
+.commentItem {
+    color: #49575f;
+    display: inline-block;
+}
+
+.autorItem > a,
+.dateTimeItem > a {
+    color: #49575f;
+}
+
+.autorItem::after {
+    color: #bfc9ce;
+    content: "|";
+    margin: 0 5px;
+}
+
+.info {
+    margin-bottom: 10px;
+}
+
+.starRatingIcon {
+    color: #e2cf00;
+}
+
+.viewItem > p,
+.commentItem > p {
+    display: inline-block;
+}
+
+.viewItem {
+    margin-right: 10px;
+}
+
+.description > p {
+    color: #6f8190;
+    font-weight: 500;
+}
+
+.learnNowBtn {
+    background: #86bc42 none repeat scroll ;
+    border: medium none;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+
+.singleImage {
+    float: right;
+    width: 48%;
+}
+
+.singleTopCoursesItem::before {
+    border: 3px solid #eaedf5;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.singleTopCoursesItem::after {
+    background: #242c42 none repeat scroll 0 0;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 5px;
+}
+
+.singleTopCoursesItem:hover::after {
+    height: 100%;
+}
+
+.learnNowBtn.hvr-sweep-to-right::before {
+    background: #242c42 none repeat scroll 0 0;
+}
+
+
+/*CourseOthersArea css end*/
+
+
+/*scrollup plugin css*/
+
+.scrollUp {
+    border: 3px solid #86bc42;
+    bottom: 25px;
+    display: table;
+    height: 35px;
+    position: fixed;
+    right: 30px;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+    width: 35px;
+    z-index: 99999;
+}
+
+.scrollUp .fa.fa-angle-up {
+    color: black;
+    display: table-cell;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.scrollUp:hover {
+    background: #86bc42 none repeat scroll 0 0;
+}
+
+.scrollUp:hover .fa.fa-angle-up {
+    color: #fff;
+}
+
+
+/*scrollup plugin css end*/
+
+
+/*footer css*/
+
+.footerArea {
+    background: #242c42 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 30px;
+    line-height: 45px;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footerArea p {
+    color:steelblue;
+}
+
+
+/*footer css*/
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    /*Top Header Css*/
+
+    .container {
+        width: 300px;
+    }
+
+.topHeader {
+    background: #242c42 none repeat scroll 0 0;
+    height: 60px;
+}
+
+.topLeft.floatleft {
+    width: 300px;
+}
+
+.email,
+.phone {
+    display: inline-block;
+    font-size: 11px;
+}
+
+.email {
+    margin-right: 10px;
+    font-size: 11px;
+}
+
+.email > a,
+.phone > a {
+    color: #fff;
+}
+
+.email .topIcon,
+.phone .topIcon {
+    color: #86bc42;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.topRight.floatright {
+    text-align: center;
+    width: 300px;
+}
+
+.socials,
+.signInGroup {
+    display: inline-block;
+}
+
+.socials {
+    margin-right: 15px;
+}
+
+.socials a,
+.signInGroup a {
+    color:red;
+   /*  -webkit-transition: all 0.4s ease; */
+    transition: all 0.4s ease;
+}
+
+.signInGroup {
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.line{padding:8px}
+
+
+/* 
+.signInGroup .login::after {
+    color: #fff;
+    content: "|";
+    margin-right: 10px;
+    padding-left: 10px;
+}
+ */
+.socials a {
+    display: inline-block;
+    margin-right: 0;
+    padding: 0 5px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-size: 12px;
+}
+
+.topHeaderContent {
+    padding-top: 12px;
+}
+
+.email span,
+.phone span {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.email span:hover,
+.phone span:hover,
+.socials a:hover,
+.socials a:hover,
+.signInGroup a:hover {
+    color: #86bc42;
+}
+
+
+/*Top Header Css End*/
+
+
+/* Header Css */
+
+.headerArea {
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.logo {
+    line-height: 100px;
+    width: 300px;
+    text-align: center;
+}
+
+.mainMenuArea {
+    box-sizing: border-box;
+    text-align: center;
+    width: 300px;
+}
+
+.mainMenu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.mainMenu ul li a {
+    color: #242c42;
+    display: block;
+    line-height: 40px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    position: relative;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.mainMenu ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #86bc42;
+    width: 0;
+    height: 5px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.mainMenu ul li a:hover:after {
+    width: 100%;
+}
+
+
+/*headerFixed css*/
+
+.headerFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #fff;
+    width: 100%;
+}
+
+.headerArea.headerFixed .logo {
+    line-height: 50px;
+}
+
+.headerArea.headerFixed .logo img {
+    width: 40%;
+}
+
+.headerArea.headerFixed .mainMenu ul li a {
+    line-height: 60px;
+}
+
+
+/*headerFixed css end*/
+
+
+/* Header Css End*/
+
+
+/*Slider Area Css*/
+
+#slider {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    margin-top: -106px;
+    left: 50%;
+    margin-left: -225px;
+    text-align: center;
+}
+
+.sliderArea {}
+
+.caption > h2 {
+    color:steelblue;
+    font-size: 25px;
+    line-height: 82.5px;
+}
+
+.caption > p {
+    color: #242c42;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.slideBtn {
+    border:none;
+    padding: 15px 80px;
+    text-transform: capitalize;
+    background: #86bc42;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.slideBtn.hvr-sweep-to-right::before {content:"|";
+    background: #242c42 none repeat scroll 0 0;
+}
+
+
+/*Slider Area Css End */
+
+
+/*Course Area Css */
+
+.sectionTitle {
+    text-align: center;
+}
+
+.topTitle {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.centerTitle {
+    color: #49575f;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+.bottomTitle {
+    display: inline-block;
+    position: relative;
+}
+
+.bottomTitle .fa.fa-star {
+    color: #86bc42;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.bottomTitle::after {
+    background: #86bc42 none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    left: 32px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+}
+
+.bottomTitle::before {
+    background: #86bc42 none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    right: 32px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+}
+
+.singleCourse {
+    margin-bottom: 150px;                 /*  need to check*/
+    margin-left: 0;
+    width: 300px;
+    float:left;
+    text-align: center;
+}
+
+.courseShowcase {
+    margin-left: -30px;
+    margin-top: 50px;
+}
+
+.courseShowcase {
+    margin-left: 0;
+    margin-top: 50px;
+    padding: 60px 0;
+}
+
+.iconCircle {
+    border-radius: 50%;
+    height: 170px;
+    margin:0 auto;
+    position: relative;
+    width: 170px;
+}
+
+.iconBg {
+    background: #86bc42 ;
+    border-radius: 50%;
+    bottom: 12px;
+    color: #fff;
+   
+    height: 146px;
+ 
+    margin-left:12px;
+    position: absolute;
+  
+    transition: all 0.4s ease 0s;
+    width: 146px;
+    z-index:10;
+}
+
+.iconBg .fa.fa-star {
+    color:steelblue;
+ 
+    font-size: 70px;
+    line-height:px;
+    margin-top:30px;;
+   
+    transition: all 0.4s ease 0s;
+  
+}
+
+.iconInfo {
+    border-radius: 50%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+
+.infoBack {
+    background: #242c42 none repeat scroll 0 0;
+    border-radius: 50%;
+    display: table;
+    height: 100%;
+    opacity: 1;
+    position: relative;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+}
+
+.infoBack::before {
+    border: 12px solid #86bc42;
+    border-radius: 50%;
+    bottom: -1px;
+    content: "";
+    left: -1px;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    z-index: 20;
+}
+
+.infoBack > a {
+    color: #fff;
+    display: table-cell;
+    padding: 20px;
+    position: relative;
+    -webkit-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    vertical-align: middle;
+    z-index: 2;
+}
+
+.iconBg::before {
+    border: 3px solid;
+    border-radius: 50%;
+    bottom: -2px;
+    content: "";
+    left: -2px;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+}
+
+.iconCircle:hover .iconBg {
+    bottom: 90%;color:#86bc42;
+}
+
+.nameCourse {
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.nameCourse > a {
+    color: #49575f;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nameCourse {
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.nameCourse > a {
+    color: #49575f;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.nameCourse i {
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.nameCourse > a:hover,
+.nameCourse:hover i {
+    color: #86bc42;
+}
+
+.courseArea {
+    padding: 80px 0 0 !important;
+}
+
+
+/*Course Area Css End */
+
+
+/*progressBarArea Css*/
+
+.progressBarArea {
+    background:url(img/01.jpg) center center/cover no-repeat fixed;
+    color:fray;
+    text-align: center;
+    padding: 45px 0;
+}
+
+.progressTitle {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.singleProgressBarNumber {
+    float: left;
+    margin-left: 30px;
+    width: 270px;
+    position: relative;
+}
+
+.progressBarContent {
+    margin-left: -30px;
+    margin-bottom: 60px;
+}
+
+.singleProgressBarNumber .num {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 75px;
+    text-transform: capitalize;
+}
+
+.singleProgressBarNumber .name {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.singleProgressBarNumber::after {
+    background: #86bc42;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 50%;
+    margin-left: -15px;
+    position: absolute;
+    width: 30px;
+}
+
+.progressBarArea .learnNow {
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 20px 70px;
+    text-transform: uppercase;
+}
+
+.singleProgressBarNumber .num::before {
+    content: "+";
+    font-size: 40px;
+    position: absolute;
+    right: 50px;
+}
+
+.learnNow.hvr-sweep-to-right::before {
+    background: #86bc42 none repeat scroll 0 0;
+}
+/* .right:hover{background:red;move-to:right;font-size:20px;
+text-transform:capitalize;transition:.9s;padding:10px;z-index:100;
+ background: #242c42 none repeat scroll 0 0;color:white;}
+.right{background: red}
+ */
+/*progressBarArea Css end*/
+
+
+/*CourseOthersArea css*/
+
+.topCourses {
+    margin-left: -30px;
+}
+
+.singleTopCoursesItem {
+    float: left;
+    margin-bottom: 50px;
+    margin-left: 0;
+    position: relative;
+    width: 300px;
+}
+
+.topCourses {
+    margin-left: 0;
+}
+
+.singleContent > a {
+    color: #49575f;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.singleContent {
+    box-sizing: border-box;
+    float: left;
+    padding-left: 25px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.singleTopCoursesItem .autorItem,
+.singleTopCoursesItem .dateTimeItem,
+.viewItem,
+.commentItem {
+    color: #49575f;
+    display: inline-block;
+}
+
+.autorItem > a,
+.dateTimeItem > a {
+    color: #49575f;
+}
+
+.autorItem::after {
+    color: #bfc9ce;
+    content: "|";
+    margin: 0 5px;
+}
+
+.info {
+    margin-bottom: 10px;
+}
+
+.starRatingIcon {
+    color: #e2cf00;
+}
+
+.viewItem > p,
+.commentItem > p {
+    display: inline-block;
+}
+
+.viewItem {
+    margin-right: 10px;
+}
+
+.description > p {
+    color: #6f8190;
+    font-weight: 500;
+}
+
+.learnNowBtn {
+    background: #86bc42 none repeat scroll ;
+    border: medium none;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+
+.singleImage {
+    float: left;
+    width: 100%;
+}
+
+.singleTopCoursesItem::before {
+    border: 3px solid #eaedf5;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.singleTopCoursesItem::after {
+    background: #242c42 none repeat scroll 0 0;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 5px;
+}
+
+.singleTopCoursesItem:hover::after {
+    height: 100%;
+}
+
+.learnNowBtn.hvr-sweep-to-right::before {
+    background: #242c42 none repeat scroll 0 0;
+}
+
+
+/*CourseOthersArea css end*/
+
+
+/*scrollup plugin css*/
+
+.scrollUp {
+    border: 3px solid #86bc42;
+    bottom: 12px;
+    display: table;
+    height: 35px;
+    position: fixed;
+    right: 10px;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+    width: 35px;
+    z-index: 99999;
+}
+
+.scrollUp .fa.fa-angle-up {
+    color: black;
+    display: table-cell;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.scrollUp:hover {
+    background: #86bc42 none repeat scroll 0 0;
+}
+
+.scrollUp:hover .fa.fa-angle-up {
+    color: #fff;
+}
+
+
+/*scrollup plugin css end*/
+
+
+/*footer css*/
+
+.footerArea {
+    background: #242c42 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 30px;
+    line-height: 45px;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footerArea p {
+    color:steelblue;
+}
+
+
+/*footer css*/
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    /*Top Header Css*/
+
+    .container {
+        width: 460px;
+    }
+
+.topHeader {
+    background: #242c42 none repeat scroll 0 0;
+}
+
+.topLeft.floatleft {
+    width: 460px;
+    text-align: center;
+    }
+
+.email,
+.phone {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.email {
+    margin-right: 40px;
+    font-size: 15px;
+}
+
+.email > a,
+.phone > a {
+    color: #fff;
+}
+
+.email .topIcon,
+.phone .topIcon {
+    color: #86bc42;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.topRight.floatright {
+    text-align: center;
+    width: 450px;
+}
+
+.socials,
+.signInGroup {
+    display: inline-block;
+}
+
+.socials {
+    margin-right: 15px;
+}
+
+.socials a,
+.signInGroup a {
+    color:red;
+   /*  -webkit-transition: all 0.4s ease; */
+    transition: all 0.4s ease;
+}
+
+.signInGroup {
+    margin-left: 50px;
+    text-transform: capitalize;
+}
+.line{padding:8px}
+
+
+/* 
+.signInGroup .login::after {
+    color: #fff;
+    content: "|";
+    margin-right: 10px;
+    padding-left: 10px;
+}
+ */
+.socials a {
+    display: inline-block;
+    margin-right: 14px;
+    padding: 0 5px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-size: 15px;
+}
+
+.topHeaderContent {
+    padding-top: 12px;
+}
+
+.email span,
+.phone span {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.email span:hover,
+.phone span:hover,
+.socials a:hover,
+.socials a:hover,
+.signInGroup a:hover {
+    color: #86bc42;
+}
+
+
+/*Top Header Css End*/
+
+
+/* Header Css */
+
+.headerArea {
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.logo {
+    line-height: 100px;
+    width: 460px;
+    text-align: center;
+}
+
+.mainMenuArea {
+    box-sizing: border-box;
+    text-align: center;
+    width: 460px;
+}
+
+.mainMenu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.mainMenu ul li a {
+    color: #242c42;
+    display: block;
+    line-height: 40px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    position: relative;
+    font-weight: 700;
+}
+
+.mainMenu ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #86bc42;
+    width: 0;
+    height: 5px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.mainMenu ul li a:hover:after {
+    width: 100%;
+}
+
+
+/*headerFixed css*/
+
+.headerFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #fff;
+    width: 100%;
+}
+
+.headerArea.headerFixed .logo {
+    line-height: 50px;
+}
+
+.headerArea.headerFixed .logo img {
+    width: 40%;
+}
+
+.headerArea.headerFixed .mainMenu ul li a {
+    line-height: 60px;
+}
+
+
+/*headerFixed css end*/
+
+
+/* Header Css End*/
+
+
+/*Slider Area Css*/
+
+#slider {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    margin-top: -106px;
+    left: 50%;
+    margin-left: -225px;
+    text-align: center;
+}
+
+.sliderArea {}
+
+.caption > h2 {
+    color:steelblue;
+    font-size: 25px;
+    line-height: 82.5px;
+}
+
+.caption > p {
+    color: #242c42;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.slideBtn {
+    border:none;
+    padding: 15px 80px;
+    text-transform: capitalize;
+    background: #86bc42;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.slideBtn.hvr-sweep-to-right::before {content:"|";
+    background: #242c42 none repeat scroll 0 0;
+}
+
+
+/*Slider Area Css End */
+
+
+/*Course Area Css */
+
+.sectionTitle {
+    text-align: center;
+}
+
+.topTitle {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.centerTitle {
+    color: #49575f;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+.bottomTitle {
+    display: inline-block;
+    position: relative;
+}
+
+.bottomTitle .fa.fa-star {
+    color: #86bc42;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.bottomTitle::after {
+    background: #86bc42 none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    left: 32px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+}
+
+.bottomTitle::before {
+    background: #86bc42 none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    right: 32px;
+    margin-top: -1px;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+}
+
+.singleCourse {
+    margin-bottom: 150px;                 /*  need to check*/
+    margin-left: 0;
+    width: 460px;
+    float:left;
+    text-align: center;
+}
+
+.courseShowcase {
+    margin-left: -30px;
+    margin-top: 50px;
+}
+
+.courseShowcase {
+    margin-left: 0;
+    margin-top: 50px;
+    padding: 60px 0;
+}
+
+.iconCircle {
+    border-radius: 50%;
+    height: 170px;
+    margin:0 auto;
+    position: relative;
+    width: 170px;
+}
+
+.iconBg {
+    background: #86bc42 ;
+    border-radius: 50%;
+    bottom: 12px;
+    color: #fff;
+   
+    height: 146px;
+ 
+    margin-left:12px;
+    position: absolute;
+  
+    transition: all 0.4s ease 0s;
+    width: 146px;
+    z-index:10;
+}
+
+.iconBg .fa.fa-star {
+    color:steelblue;
+ 
+    font-size: 70px;
+    line-height:px;
+    margin-top:30px;;
+   
+    transition: all 0.4s ease 0s;
+  
+}
+
+.iconInfo {
+    border-radius: 50%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+
+.infoBack {
+    background: #242c42 none repeat scroll 0 0;
+    border-radius: 50%;
+    display: table;
+    height: 100%;
+    opacity: 1;
+    position: relative;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+}
+
+.infoBack::before {
+    border: 12px solid #86bc42;
+    border-radius: 50%;
+    bottom: -1px;
+    content: "";
+    left: -1px;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    z-index: 20;
+}
+
+.infoBack > a {
+    color: #fff;
+    display: table-cell;
+    padding: 20px;
+    position: relative;
+    -webkit-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    vertical-align: middle;
+    z-index: 2;
+}
+
+.iconBg::before {
+    border: 3px solid;
+    border-radius: 50%;
+    bottom: -2px;
+    content: "";
+    left: -2px;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+}
+
+.iconCircle:hover .iconBg {
+    bottom: 90%;color:#86bc42;
+}
+
+.nameCourse {
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.nameCourse > a {
+    color: #49575f;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nameCourse {
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.nameCourse > a {
+    color: #49575f;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.nameCourse i {
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.nameCourse > a:hover,
+.nameCourse:hover i {
+    color: #86bc42;
+}
+
+.courseArea {
+    padding: 80px 0 0 !important;
+}
+
+
+/*Course Area Css End */
+
+
+/*progressBarArea Css*/
+
+.progressBarArea {
+    background:url(img/01.jpg) center center/cover no-repeat fixed;
+    color:fray;
+    text-align: center;
+    padding: 45px 0;
+}
+
+.progressTitle {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.singleProgressBarNumber {
+    float: left;
+    width: 400px;
+    position: relative;
+}
+
+.progressBarContent {
+    margin-left: 0;
+    margin-bottom: 60px;
+}
+
+.singleProgressBarNumber .num {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 75px;
+    text-transform: capitalize;
+}
+
+.singleProgressBarNumber .name {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.singleProgressBarNumber::after {
+    background: #86bc42;
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 50%;
+    margin-left: -15px;
+    position: absolute;
+    width: 30px;
+}
+
+.progressBarArea .learnNow {
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 20px 70px;
+    text-transform: uppercase;
+}
+
+.singleProgressBarNumber .num::before {
+    content: "+";
+    font-size: 40px;
+    position: absolute;
+    right: 95px;
+}
+
+.learnNow.hvr-sweep-to-right::before {
+    background: #86bc42 none repeat scroll 0 0;
+}
+/* .right:hover{background:red;move-to:right;font-size:20px;
+text-transform:capitalize;transition:.9s;padding:10px;z-index:100;
+ background: #242c42 none repeat scroll 0 0;color:white;}
+.right{background: red}
+ */
+/*progressBarArea Css end*/
+
+
+/*CourseOthersArea css*/
+
+.topCourses {
+    margin-left: -30px;
+}
+
+.singleTopCoursesItem {
+    float: left;
+    margin-bottom: 50px;
+    margin-left: 0;
+    position: relative;
+    width: 460px;
+}
+
+.topCourses {
+    margin-left: 0;
+}
+
+.singleContent > a {
+    color: #49575f;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
+
+.singleContent {
+    box-sizing: border-box;
+    float: left;
+    padding-left: 25px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.singleTopCoursesItem .autorItem,
+.singleTopCoursesItem .dateTimeItem,
+.viewItem,
+.commentItem {
+    color: #49575f;
+    display: inline-block;
+}
+
+.autorItem > a,
+.dateTimeItem > a {
+    color: #49575f;
+}
+
+.autorItem::after {
+    color: #bfc9ce;
+    content: "|";
+    margin: 0 5px;
+}
+
+.info {
+    margin-bottom: 10px;
+}
+
+.starRatingIcon {
+    color: #e2cf00;
+}
+
+.viewItem > p,
+.commentItem > p {
+    display: inline-block;
+}
+
+.viewItem {
+    margin-right: 10px;
+}
+
+.description > p {
+    color: #6f8190;
+    font-weight: 500;
+}
+
+.learnNowBtn {
+    background: #86bc42 none repeat scroll ;
+    border: medium none;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+
+.singleImage {
+    float: left;
+    width: 95%;
+    margin-left: 5%;
+}
+
+.singleTopCoursesItem::before {
+    border: 3px solid #eaedf5;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.singleTopCoursesItem::after {
+    background: #242c42 none repeat scroll 0 0;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 5px;
+}
+
+.singleTopCoursesItem:hover::after {
+    height: 100%;
+}
+
+.learnNowBtn.hvr-sweep-to-right::before {
+    background: #242c42 none repeat scroll 0 0;
+}
+
+
+/*CourseOthersArea css end*/
+
+
+/*scrollup plugin css*/
+
+.scrollUp {
+    border: 3px solid #86bc42;
+    bottom: 12px;
+    display: table;
+    height: 35px;
+    position: fixed;
+    right: 10px;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+    width: 35px;
+    z-index: 99999;
+}
+
+.scrollUp .fa.fa-angle-up {
+    color: black;
+    display: table-cell;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.scrollUp:hover {
+    background: #86bc42 none repeat scroll 0 0;
+}
+
+.scrollUp:hover .fa.fa-angle-up {
+    color: #fff;
+}
+
+
+/*scrollup plugin css end*/
+
+
+/*footer css*/
+
+.footerArea {
+    background: #242c42 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 30px;
+    line-height: 45px;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footerArea p {
+    color:steelblue;
+}
+
+
+/*footer css*/
+}
